@@ -20,6 +20,8 @@ struct SettingsView: View {
     @AppStorage("sleepGoal")
     private var sleepGoal = 8
     
+    private let unlockProTip = UnlockProTip()
+    
     var body: some View {
         NavigationView {
             Form {
@@ -51,6 +53,8 @@ struct SettingsView: View {
                 
                 Section {
                     Button("Unlock PRO") {}
+                        .popoverTip(unlockProTip)
+                    
                     Button("Restore purchase") {}
                 }
             }
