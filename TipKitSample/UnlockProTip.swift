@@ -22,4 +22,10 @@ struct UnlockProTip: Tip {
     var image: Image? {
         Image(systemName: "lock.open.fill")
     }
+    
+    var actions: [Action] {
+        Action(id: "dismiss", title: "Dismiss") {
+            self.invalidate(reason: .tipClosed)
+        }
+    }
 }

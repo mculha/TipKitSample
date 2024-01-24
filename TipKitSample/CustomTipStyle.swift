@@ -33,6 +33,16 @@ struct CustomTipStyle: TipViewStyle {
                     .multilineTextAlignment(.center)
                     .font(.system(size: 12))
             }
+            
+            ForEach(configuration.actions) { action in
+                Button(action: action.handler) {
+                    action.label()
+                        .font(.system(size: 12))
+                }
+            }
+            .padding(.top)
+            
+            
         }
         .frame(maxWidth: .infinity)
         .backgroundStyle(.thinMaterial)

@@ -53,8 +53,12 @@ struct SettingsView: View {
                 }
                 
                 Section {
-                    TipView(unlockProTip, arrowEdge: .bottom)
-                        .tipViewStyle(CustomTipStyle())
+                    TipView(unlockProTip, arrowEdge: .bottom) { action in
+                        if action.id == "dismiss" {
+                            action.handler()
+                        }
+                    }
+                    .tipViewStyle(CustomTipStyle())
                     
                     Button("Unlock PRO") {}
 //                        .popoverTip(unlockProTip, arrowEdge: .trailing)
