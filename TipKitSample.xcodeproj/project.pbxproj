@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90848542B61A95300681C92 /* CustomTipStyle.swift */; };
 		E943486F2AAA2E86001F8E12 /* TipKitSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */; };
 		E94348712AAA2E86001F8E12 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94348702AAA2E86001F8E12 /* SettingsView.swift */; };
 		E94348732AAA2E86001F8E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94348722AAA2E86001F8E12 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E90848542B61A95300681C92 /* CustomTipStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipStyle.swift; sourceTree = "<group>"; };
 		E943486B2AAA2E86001F8E12 /* TipKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipKitSampleApp.swift; sourceTree = "<group>"; };
 		E94348702AAA2E86001F8E12 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */,
 				E94348702AAA2E86001F8E12 /* SettingsView.swift */,
 				E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */,
+				E90848542B61A95300681C92 /* CustomTipStyle.swift */,
 				E94348722AAA2E86001F8E12 /* Assets.xcassets */,
 				E94348742AAA2E86001F8E12 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */,
 				E94348712AAA2E86001F8E12 /* SettingsView.swift in Sources */,
 				E943486F2AAA2E86001F8E12 /* TipKitSampleApp.swift in Sources */,
 				E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */,

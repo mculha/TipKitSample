@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct SettingsView: View {
     @AppStorage("isNotificationsEnabled")
@@ -52,8 +53,11 @@ struct SettingsView: View {
                 }
                 
                 Section {
+                    TipView(unlockProTip, arrowEdge: .bottom)
+                        .tipViewStyle(CustomTipStyle())
+                    
                     Button("Unlock PRO") {}
-                        .popoverTip(unlockProTip)
+//                        .popoverTip(unlockProTip, arrowEdge: .trailing)
                     
                     Button("Restore purchase") {}
                 }

@@ -12,10 +12,14 @@ import TipKit
 struct UnlockProTip: Tip {
     
     var title: Text {
-        Text("Unlock Pro by Clicking the Button")
+        Text("Unlock Pro")
     }
     
     var message: Text? {
         Text("Do you know that you can use the application unlimitedly?")
+    }
+    
+    var image: Image? {
+        Image(systemName: "lock.open.fill")
     }
 }
