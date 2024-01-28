@@ -25,6 +25,9 @@ struct RestoreTip: Tip {
         [
             #Rule(Self.$isRestored) {
                 $0 == false
+            },
+            #Rule(UnlockProTip.$tipShown) {
+                $0 == true
             }
         ]
     }

@@ -56,8 +56,9 @@ struct SettingsView: View {
                 Section {
                     TipView(unlockProTip, arrowEdge: .bottom)
                         .tipViewStyle(CustomTipStyle())
-                    
-                    Button("Unlock PRO") {}
+                    Button("Unlock PRO") {
+                        UnlockProTip.tipShown = true
+                    }
                     
                     
                     TipView(restoreTip, arrowEdge: .bottom)
