@@ -22,6 +22,7 @@ struct SettingsView: View {
     private var sleepGoal = 8
     
     private let unlockProTip = UnlockProTip()
+    private let restoreTip = RestoreTip()
     
     var body: some View {
         NavigationView {
@@ -57,9 +58,12 @@ struct SettingsView: View {
                         .tipViewStyle(CustomTipStyle())
                     
                     Button("Unlock PRO") {}
-//                        .popoverTip(unlockProTip, arrowEdge: .trailing)
                     
-                    Button("Restore purchase") {}
+                    
+                    TipView(restoreTip, arrowEdge: .bottom)
+                    Button("Restore purchase") {
+                        RestoreTip.isRestored.toggle()
+                    }
                 }
             }
             .navigationBarTitle(Text("Settings"))

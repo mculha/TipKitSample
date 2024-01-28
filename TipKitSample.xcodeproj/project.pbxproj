@@ -13,6 +13,7 @@
 		E94348732AAA2E86001F8E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94348722AAA2E86001F8E12 /* Assets.xcassets */; };
 		E94348762AAA2E86001F8E12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94348752AAA2E86001F8E12 /* Preview Assets.xcassets */; };
 		E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */; };
+		E9A3232E2B66EC2A00D683D5 /* RestoreTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E94348722AAA2E86001F8E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E94348752AAA2E86001F8E12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockProTip.swift; sourceTree = "<group>"; };
+		E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */,
 				E94348702AAA2E86001F8E12 /* SettingsView.swift */,
 				E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */,
+				E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */,
 				E90848542B61A95300681C92 /* CustomTipStyle.swift */,
 				E94348722AAA2E86001F8E12 /* Assets.xcassets */,
 				E94348742AAA2E86001F8E12 /* Preview Content */,
@@ -146,6 +149,7 @@
 				E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */,
 				E94348712AAA2E86001F8E12 /* SettingsView.swift in Sources */,
 				E943486F2AAA2E86001F8E12 /* TipKitSampleApp.swift in Sources */,
+				E9A3232E2B66EC2A00D683D5 /* RestoreTip.swift in Sources */,
 				E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
