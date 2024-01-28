@@ -61,10 +61,11 @@ struct SettingsView: View {
                     }
                     
                     
-                    TipView(restoreTip, arrowEdge: .bottom)
+//                    TipView(restoreTip, arrowEdge: .bottom)
                     Button("Restore purchase") {
                         RestoreTip.isRestored.toggle()
                     }
+                    .popoverTip(restoreTip, arrowEdge: .bottom)
                 }
             }
             .navigationBarTitle(Text("Settings"))
