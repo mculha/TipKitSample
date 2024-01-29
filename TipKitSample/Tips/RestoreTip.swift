@@ -23,6 +23,9 @@ struct RestoreTip: Tip {
     
     var rules: [Rule] {
         [
+            #Rule(NotificationTip.$isNotificationTipShown) {
+                $0 == true
+            },
             #Rule(Self.$isRestored) {
                 $0 == false
             },

@@ -26,4 +26,12 @@ struct NotificationTip: Tip {
         Image(systemName: "iphone.gen3.radiowaves.left.and.right")
     }
     
+    var rules: [Rule] {
+        [
+            #Rule(Self.$isNotificationTipShown) {
+                $0 == false
+            }
+        ]
+    }
+    
 }

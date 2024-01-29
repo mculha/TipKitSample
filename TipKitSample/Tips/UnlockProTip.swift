@@ -35,6 +35,9 @@ struct UnlockProTip: Tip {
     
     var rules: [Rule] {
         [
+            #Rule(NotificationTip.$isNotificationTipShown) {
+                $0 == true
+            },
             #Rule(Self.$tipShown) {
                 $0 == false
             }

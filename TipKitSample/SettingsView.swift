@@ -10,7 +10,7 @@ import TipKit
 
 struct SettingsView: View {
     @AppStorage("isNotificationsEnabled")
-    private var isNotificationEnabled = true
+    private var isNotificationEnabled = false
     
     @AppStorage("isSleepTrackingEnabled")
     private var isSleepTrackingEnabled = true
@@ -32,7 +32,7 @@ struct SettingsView: View {
                     Toggle(isOn: $isNotificationEnabled) {
                         Text("Notification:")
                     }
-                    .popoverTip(notificationTip, arrowEdge: .top)
+                    TipView(notificationTip, arrowEdge: .top)
                 }
 
                 Section(header: Text("Sleep tracking settings")) {
@@ -59,18 +59,26 @@ struct SettingsView: View {
                     TipView(unlockProTip, arrowEdge: .bottom)
                         .tipViewStyle(CustomTipStyle())
                     Button("Unlock PRO") {
-                        UnlockProTip.tipShown = true
+                        withAnimation {
+                            UnlockProTip.tipShown = true
+                        }
                     }
                     
                     
-//                    TipView(restoreTip, arrowEdge: .bottom)
+                    TipView(restoreTip, arrowEdge: .bottom)
                     Button("Restore purchase") {
-                        RestoreTip.isRestored.toggle()
+                        withAnimation {
+                            RestoreTip.isRestored.toggle()
+                        }
                     }
-                    .popoverTip(restoreTip, arrowEdge: .bottom)
                 }
             }
             .navigationBarTitle(Text("Settings"))
+            .onChange(of: isNotificationEnabled) { oldValue, newValue in
+                withAnimation {
+                    NotificationTip.isNotificationTipShown = true
+                }
+            }
         }
     }
 }
