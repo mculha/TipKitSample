@@ -23,6 +23,7 @@ struct SettingsView: View {
     
     private let unlockProTip = UnlockProTip()
     private let restoreTip = RestoreTip()
+    private let notificationTip = NotificationTip()
     
     var body: some View {
         NavigationView {
@@ -31,6 +32,7 @@ struct SettingsView: View {
                     Toggle(isOn: $isNotificationEnabled) {
                         Text("Notification:")
                     }
+                    .popoverTip(notificationTip, arrowEdge: .top)
                 }
 
                 Section(header: Text("Sleep tracking settings")) {
