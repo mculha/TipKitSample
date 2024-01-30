@@ -13,7 +13,7 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section(header: Text("Basic")) {
+                Section("Basic") {
                     NavigationLink(value: DestinationType.simple) {
                         Label { Text("Simple") } icon: { Image(systemName: "b.circle.fill").foregroundStyle(.green) }
                     } 
@@ -22,6 +22,13 @@ struct MainView: View {
                         Label { Text("Popover") } icon: { Image(systemName: "p.circle.fill").foregroundStyle(.blue) }
                     }
                 }
+                
+                Section("Custom") {
+                    NavigationLink(value: DestinationType.colorful) {
+                        Label { Text("Colorful Text") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.purple) }
+                    }
+                }
+                
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("TipKit")
@@ -31,6 +38,8 @@ struct MainView: View {
                     SimpleView()
                 case .popover:
                     PopoverView()
+                case .colorful:
+                    ColorfulTextView()
                 }
             }
         }
@@ -44,5 +53,5 @@ struct MainView: View {
 enum DestinationType: Hashable {
     case simple
     case popover
-    
+    case colorful
 }
