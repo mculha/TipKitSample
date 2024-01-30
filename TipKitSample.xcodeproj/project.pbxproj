@@ -10,11 +10,13 @@
 		E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90848542B61A95300681C92 /* CustomTipStyle.swift */; };
 		E93401EB2B683E200095CE37 /* NotificationTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93401EA2B683E200095CE37 /* NotificationTip.swift */; };
 		E943486F2AAA2E86001F8E12 /* TipKitSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */; };
-		E94348712AAA2E86001F8E12 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94348702AAA2E86001F8E12 /* SettingsView.swift */; };
+		E94348712AAA2E86001F8E12 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94348702AAA2E86001F8E12 /* MainView.swift */; };
 		E94348732AAA2E86001F8E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94348722AAA2E86001F8E12 /* Assets.xcassets */; };
 		E94348762AAA2E86001F8E12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94348752AAA2E86001F8E12 /* Preview Assets.xcassets */; };
 		E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */; };
 		E9A3232E2B66EC2A00D683D5 /* RestoreTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */; };
+		E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC55F2B6993EC00392495 /* SimpleView.swift */; };
+		E9EEC5622B6993FE00392495 /* SimpleTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5612B6993FE00392495 /* SimpleTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +24,13 @@
 		E93401EA2B683E200095CE37 /* NotificationTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTip.swift; sourceTree = "<group>"; };
 		E943486B2AAA2E86001F8E12 /* TipKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipKitSampleApp.swift; sourceTree = "<group>"; };
-		E94348702AAA2E86001F8E12 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E94348702AAA2E86001F8E12 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E94348722AAA2E86001F8E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E94348752AAA2E86001F8E12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockProTip.swift; sourceTree = "<group>"; };
 		E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreTip.swift; sourceTree = "<group>"; };
+		E9EEC55F2B6993EC00392495 /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
+		E9EEC5612B6993FE00392495 /* SimpleTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 				E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */,
 				E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */,
 				E93401EA2B683E200095CE37 /* NotificationTip.swift */,
+				E9EEC5612B6993FE00392495 /* SimpleTip.swift */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -78,9 +83,10 @@
 		E943486D2AAA2E86001F8E12 /* TipKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				E9EEC55E2B69918F00392495 /* Screens */,
 				E93401E82B683E040095CE37 /* Tips */,
 				E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */,
-				E94348702AAA2E86001F8E12 /* SettingsView.swift */,
+				E94348702AAA2E86001F8E12 /* MainView.swift */,
 				E94348722AAA2E86001F8E12 /* Assets.xcassets */,
 				E94348742AAA2E86001F8E12 /* Preview Content */,
 			);
@@ -93,6 +99,14 @@
 				E94348752AAA2E86001F8E12 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9EEC55E2B69918F00392495 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E9EEC55F2B6993EC00392495 /* SimpleView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,11 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E93401EB2B683E200095CE37 /* NotificationTip.swift in Sources */,
+				E9EEC5622B6993FE00392495 /* SimpleTip.swift in Sources */,
 				E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */,
-				E94348712AAA2E86001F8E12 /* SettingsView.swift in Sources */,
+				E94348712AAA2E86001F8E12 /* MainView.swift in Sources */,
 				E943486F2AAA2E86001F8E12 /* TipKitSampleApp.swift in Sources */,
 				E9A3232E2B66EC2A00D683D5 /* RestoreTip.swift in Sources */,
 				E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */,
+				E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

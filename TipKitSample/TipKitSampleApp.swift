@@ -12,12 +12,9 @@ import TipKit
 struct TipKitSampleApp: App {
     var body: some Scene {
         WindowGroup {
-            SettingsView()
+            MainView()
                 .task {
-                    try? Tips.configure([
-                        .displayFrequency(.immediate),
-                        .datastoreLocation(.applicationDefault),
-                    ])
+                    try? Tips.configure()
                 }
         }
     }
