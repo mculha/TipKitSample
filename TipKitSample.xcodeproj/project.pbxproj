@@ -17,6 +17,8 @@
 		E9A3232E2B66EC2A00D683D5 /* RestoreTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */; };
 		E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC55F2B6993EC00392495 /* SimpleView.swift */; };
 		E9EEC5622B6993FE00392495 /* SimpleTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5612B6993FE00392495 /* SimpleTip.swift */; };
+		E9EEC5642B69975F00392495 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5632B69975F00392495 /* PopoverView.swift */; };
+		E9EEC5662B6997B600392495 /* PopoverTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5652B6997B600392495 /* PopoverTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreTip.swift; sourceTree = "<group>"; };
 		E9EEC55F2B6993EC00392495 /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 		E9EEC5612B6993FE00392495 /* SimpleTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTip.swift; sourceTree = "<group>"; };
+		E9EEC5632B69975F00392495 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		E9EEC5652B6997B600392495 /* PopoverTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 				E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */,
 				E93401EA2B683E200095CE37 /* NotificationTip.swift */,
 				E9EEC5612B6993FE00392495 /* SimpleTip.swift */,
+				E9EEC5652B6997B600392495 /* PopoverTip.swift */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				E9EEC55F2B6993EC00392495 /* SimpleView.swift */,
+				E9EEC5632B69975F00392495 /* PopoverView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -185,8 +191,10 @@
 				E94348712AAA2E86001F8E12 /* MainView.swift in Sources */,
 				E943486F2AAA2E86001F8E12 /* TipKitSampleApp.swift in Sources */,
 				E9A3232E2B66EC2A00D683D5 /* RestoreTip.swift in Sources */,
+				E9EEC5642B69975F00392495 /* PopoverView.swift in Sources */,
 				E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */,
 				E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */,
+				E9EEC5662B6997B600392495 /* PopoverTip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

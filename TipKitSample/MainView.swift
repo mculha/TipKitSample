@@ -16,9 +16,11 @@ struct MainView: View {
                 Section(header: Text("Basic")) {
                     NavigationLink(value: DestinationType.simple) {
                         Label { Text("Simple") } icon: { Image(systemName: "b.circle.fill").foregroundStyle(.green) }
-                    }
+                    } 
                     
-                    Label { Text("Popover") } icon: { Image(systemName: "p.circle.fill").foregroundStyle(.blue) }
+                    NavigationLink(value: DestinationType.popover) {
+                        Label { Text("Popover") } icon: { Image(systemName: "p.circle.fill").foregroundStyle(.blue) }
+                    }
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -27,6 +29,8 @@ struct MainView: View {
                 switch navigation {
                 case .simple:
                     SimpleView()
+                case .popover:
+                    PopoverView()
                 }
             }
         }
@@ -39,5 +43,6 @@ struct MainView: View {
 
 enum DestinationType: Hashable {
     case simple
+    case popover
     
 }
