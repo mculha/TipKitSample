@@ -27,6 +27,10 @@ struct MainView: View {
                     NavigationLink(value: DestinationType.colorful) {
                         Label { Text("Colorful Text") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.purple) }
                     }
+                    
+                    NavigationLink(value: DestinationType.colorfulBackground) {
+                        Label { Text("Colorful background") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.orange) }
+                    }
                 }
                 
             }
@@ -40,6 +44,8 @@ struct MainView: View {
                     PopoverView()
                 case .colorful:
                     ColorfulTextView()
+                case .colorfulBackground:
+                    ColorfulBackgroundView()
                 }
             }
         }
@@ -54,4 +60,5 @@ enum DestinationType: Hashable {
     case simple
     case popover
     case colorful
+    case colorfulBackground
 }

@@ -21,6 +21,8 @@
 		E9EEC5662B6997B600392495 /* PopoverTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5652B6997B600392495 /* PopoverTip.swift */; };
 		E9EEC5682B69999600392495 /* ColorfulTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5672B69999600392495 /* ColorfulTextView.swift */; };
 		E9EEC56A2B6999E400392495 /* ColorfulTextTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5692B6999E400392495 /* ColorfulTextTip.swift */; };
+		E9EEC56C2B699A9200392495 /* ColorfulBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC56B2B699A9200392495 /* ColorfulBackgroundView.swift */; };
+		E9EEC56E2B699AB300392495 /* ColorfulBackgroundTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC56D2B699AB300392495 /* ColorfulBackgroundTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		E9EEC5652B6997B600392495 /* PopoverTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTip.swift; sourceTree = "<group>"; };
 		E9EEC5672B69999600392495 /* ColorfulTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulTextView.swift; sourceTree = "<group>"; };
 		E9EEC5692B6999E400392495 /* ColorfulTextTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulTextTip.swift; sourceTree = "<group>"; };
+		E9EEC56B2B699A9200392495 /* ColorfulBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulBackgroundView.swift; sourceTree = "<group>"; };
+		E9EEC56D2B699AB300392495 /* ColorfulBackgroundTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulBackgroundTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 				E9EEC5612B6993FE00392495 /* SimpleTip.swift */,
 				E9EEC5652B6997B600392495 /* PopoverTip.swift */,
 				E9EEC5692B6999E400392495 /* ColorfulTextTip.swift */,
+				E9EEC56D2B699AB300392495 /* ColorfulBackgroundTip.swift */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 				E9EEC55F2B6993EC00392495 /* SimpleView.swift */,
 				E9EEC5632B69975F00392495 /* PopoverView.swift */,
 				E9EEC5672B69999600392495 /* ColorfulTextView.swift */,
+				E9EEC56B2B699A9200392495 /* ColorfulBackgroundView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 				E93401EB2B683E200095CE37 /* NotificationTip.swift in Sources */,
 				E9EEC5622B6993FE00392495 /* SimpleTip.swift in Sources */,
 				E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */,
+				E9EEC56E2B699AB300392495 /* ColorfulBackgroundTip.swift in Sources */,
 				E94348712AAA2E86001F8E12 /* MainView.swift in Sources */,
 				E9EEC56A2B6999E400392495 /* ColorfulTextTip.swift in Sources */,
 				E9EEC5682B69999600392495 /* ColorfulTextView.swift in Sources */,
@@ -203,6 +210,7 @@
 				E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */,
 				E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */,
 				E9EEC5662B6997B600392495 /* PopoverTip.swift in Sources */,
+				E9EEC56C2B699A9200392495 /* ColorfulBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
