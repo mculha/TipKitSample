@@ -29,11 +29,15 @@ struct MainView: View {
                     }
                     
                     NavigationLink(value: DestinationType.colorfulBackground) {
-                        Label { Text("Colorful background") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.orange) }
+                        Label { Text("Colorful Background") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.orange) }
                     }
                     
                     NavigationLink(value: DestinationType.customCornerRadius) {
                         Label { Text("Custom Corner Radius") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.cyan) }
+                    }
+                    
+                    NavigationLink(value: DestinationType.customImageSize) {
+                        Label { Text("Custom Image Size") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.blue) }
                     }
                 }
                 
@@ -52,6 +56,8 @@ struct MainView: View {
                     ColorfulBackgroundView()
                 case .customCornerRadius:
                     CustomCornerRadiusView()
+                case .customImageSize:
+                    CustomImageSizeView()
                 }
             }
         }
@@ -68,4 +74,5 @@ enum DestinationType: Hashable {
     case colorful
     case colorfulBackground
     case customCornerRadius
+    case customImageSize
 }
