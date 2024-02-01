@@ -31,6 +31,10 @@ struct MainView: View {
                     NavigationLink(value: DestinationType.colorfulBackground) {
                         Label { Text("Colorful background") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.orange) }
                     }
+                    
+                    NavigationLink(value: DestinationType.customCornerRadius) {
+                        Label { Text("Custom Corner Radius") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.cyan) }
+                    }
                 }
                 
             }
@@ -46,6 +50,8 @@ struct MainView: View {
                     ColorfulTextView()
                 case .colorfulBackground:
                     ColorfulBackgroundView()
+                case .customCornerRadius:
+                    CustomCornerRadiusView()
                 }
             }
         }
@@ -61,4 +67,5 @@ enum DestinationType: Hashable {
     case popover
     case colorful
     case colorfulBackground
+    case customCornerRadius
 }
