@@ -21,6 +21,10 @@ struct MainView: View {
                     NavigationLink(value: DestinationType.popover) {
                         Label { Text("Popover") } icon: { Image(systemName: "p.circle.fill").foregroundStyle(.blue) }
                     }
+                    
+                    NavigationLink(value: DestinationType.inline) {
+                        Label { Text("Inline") } icon: { Image(systemName: "i.circle.fill").foregroundStyle(.yellow) }
+                    }
                 }
                 
                 Section("Custom") {
@@ -33,11 +37,11 @@ struct MainView: View {
                     }
                     
                     NavigationLink(value: DestinationType.customCornerRadius) {
-                        Label { Text("Custom Corner Radius") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.cyan) }
+                        Label { Text("Corner Radius") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.cyan) }
                     }
                     
                     NavigationLink(value: DestinationType.customImageSize) {
-                        Label { Text("Custom Image Size") } icon: { Image(systemName: "c.circle.fill").foregroundStyle(.blue) }
+                        Label { Text("Adjustable Image Size") } icon: { Image(systemName: "a.circle.fill").foregroundStyle(.blue) }
                     }
                 }
                 
@@ -58,6 +62,8 @@ struct MainView: View {
                     CustomCornerRadiusView()
                 case .customImageSize:
                     CustomImageSizeView()
+                case .inline:
+                    InlineView()
                 }
             }
         }
@@ -71,6 +77,7 @@ struct MainView: View {
 enum DestinationType: Hashable {
     case simple
     case popover
+    case inline
     case colorful
     case colorfulBackground
     case customCornerRadius

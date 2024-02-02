@@ -18,6 +18,8 @@
 		E945008B2B6C2CD700CD4732 /* CustomImageSizeTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945008A2B6C2CD700CD4732 /* CustomImageSizeTip.swift */; };
 		E945008D2B6C2D1500CD4732 /* CustomImageSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E945008C2B6C2D1500CD4732 /* CustomImageSizeView.swift */; };
 		E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */; };
+		E994D17E2B6D844F00CFB88D /* InlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994D17D2B6D844F00CFB88D /* InlineView.swift */; };
+		E994D1802B6D846200CFB88D /* InlineTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E994D17F2B6D846200CFB88D /* InlineTip.swift */; };
 		E9A3232E2B66EC2A00D683D5 /* RestoreTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */; };
 		E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC55F2B6993EC00392495 /* SimpleView.swift */; };
 		E9EEC5622B6993FE00392495 /* SimpleTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5612B6993FE00392495 /* SimpleTip.swift */; };
@@ -42,6 +44,8 @@
 		E945008A2B6C2CD700CD4732 /* CustomImageSizeTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageSizeTip.swift; sourceTree = "<group>"; };
 		E945008C2B6C2D1500CD4732 /* CustomImageSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageSizeView.swift; sourceTree = "<group>"; };
 		E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockProTip.swift; sourceTree = "<group>"; };
+		E994D17D2B6D844F00CFB88D /* InlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineView.swift; sourceTree = "<group>"; };
+		E994D17F2B6D846200CFB88D /* InlineTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineTip.swift; sourceTree = "<group>"; };
 		E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreTip.swift; sourceTree = "<group>"; };
 		E9EEC55F2B6993EC00392495 /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 		E9EEC5612B6993FE00392495 /* SimpleTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTip.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 				E9EEC56D2B699AB300392495 /* ColorfulBackgroundTip.swift */,
 				E94500882B6C2ADC00CD4732 /* CustomCornerRadiusTip.swift */,
 				E945008A2B6C2CD700CD4732 /* CustomImageSizeTip.swift */,
+				E994D17F2B6D846200CFB88D /* InlineTip.swift */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				E9EEC56B2B699A9200392495 /* ColorfulBackgroundView.swift */,
 				E94500862B6C2AB900CD4732 /* CustomCornerRadiusView.swift */,
 				E945008C2B6C2D1500CD4732 /* CustomImageSizeView.swift */,
+				E994D17D2B6D844F00CFB88D /* InlineView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -167,7 +173,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					E943486A2AAA2E86001F8E12 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -211,6 +217,7 @@
 			files = (
 				E93401EB2B683E200095CE37 /* NotificationTip.swift in Sources */,
 				E9EEC5622B6993FE00392495 /* SimpleTip.swift in Sources */,
+				E994D1802B6D846200CFB88D /* InlineTip.swift in Sources */,
 				E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */,
 				E9EEC56E2B699AB300392495 /* ColorfulBackgroundTip.swift in Sources */,
 				E94348712AAA2E86001F8E12 /* MainView.swift in Sources */,
@@ -225,6 +232,7 @@
 				E9876A3B2ACB59C300865ABA /* UnlockProTip.swift in Sources */,
 				E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */,
 				E9EEC5662B6997B600392495 /* PopoverTip.swift in Sources */,
+				E994D17E2B6D844F00CFB88D /* InlineView.swift in Sources */,
 				E9EEC56C2B699A9200392495 /* ColorfulBackgroundView.swift in Sources */,
 				E94500892B6C2ADC00CD4732 /* CustomCornerRadiusTip.swift in Sources */,
 			);
@@ -237,6 +245,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -298,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
