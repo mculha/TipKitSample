@@ -43,6 +43,9 @@ struct MainView: View {
                     NavigationLink(value: DestinationType.customImageSize) {
                         Label { Text("Adjustable Image Size") } icon: { Image(systemName: "a.circle.fill").foregroundStyle(.blue) }
                     }
+                    NavigationLink(value: DestinationType.customStyle) {
+                        Label { Text("Style") } icon: { Image(systemName: "s.circle.fill").foregroundStyle(.indigo) }
+                    }
                 }
                 
             }
@@ -64,6 +67,8 @@ struct MainView: View {
                     CustomImageSizeView()
                 case .inline:
                     InlineView()
+                case .customStyle:
+                    CustomStyleView()
                 }
             }
         }
@@ -82,4 +87,5 @@ enum DestinationType: Hashable {
     case colorfulBackground
     case customCornerRadius
     case customImageSize
+    case customStyle
 }

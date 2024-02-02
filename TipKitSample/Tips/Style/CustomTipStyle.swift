@@ -24,12 +24,13 @@ struct CustomTipStyle: TipViewStyle {
                 title
                     .bold()
                     .textCase(.uppercase)
+                    .foregroundStyle(.teal)
                     .font(.system(size: 16))
             }
             
             if let message = configuration.message {
                 message
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.purple)
                     .multilineTextAlignment(.center)
                     .font(.system(size: 12))
             }
@@ -47,9 +48,10 @@ struct CustomTipStyle: TipViewStyle {
         .frame(maxWidth: .infinity)
         .backgroundStyle(.thinMaterial)
         .overlay(alignment: .topTrailing) {
-            Image(systemName: "multiply")
+            Image(systemName: "xmark.diamond.fill")
+                .symbolRenderingMode(.multicolor)
                 .font(.title2)
-                .alignmentGuide(.top) { $0[.top] - 5 }
+                .alignmentGuide(.top) { $0[.top] + 5}
                 .alignmentGuide(.trailing) { $0[.trailing] + 5 }
                 .foregroundStyle(.secondary)
                 .onTapGesture {
