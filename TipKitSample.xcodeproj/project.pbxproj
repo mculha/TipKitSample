@@ -79,19 +79,13 @@
 		E93401E82B683E040095CE37 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				E948A53B2B6EDC5C00C714C6 /* Basic */,
+				E948A53C2B6EDC6100C714C6 /* Custom */,
+				E948A53D2B6EDC6500C714C6 /* Rule */,
 				E93401E92B683E0D0095CE37 /* Style */,
 				E9876A3A2ACB59C300865ABA /* UnlockProTip.swift */,
 				E9A3232D2B66EC2A00D683D5 /* RestoreTip.swift */,
 				E93401EA2B683E200095CE37 /* NotificationTip.swift */,
-				E9EEC5612B6993FE00392495 /* SimpleTip.swift */,
-				E9EEC5652B6997B600392495 /* PopoverTip.swift */,
-				E9EEC5692B6999E400392495 /* ColorfulTextTip.swift */,
-				E9EEC56D2B699AB300392495 /* ColorfulBackgroundTip.swift */,
-				E94500882B6C2ADC00CD4732 /* CustomCornerRadiusTip.swift */,
-				E945008A2B6C2CD700CD4732 /* CustomImageSizeTip.swift */,
-				E994D17F2B6D846200CFB88D /* InlineTip.swift */,
-				E994D1832B6D876600CFB88D /* CustomStyleTip.swift */,
-				E948A5332B6ED95000C714C6 /* BasicRuleTip.swift */,
 			);
 			path = Tips;
 			sourceTree = "<group>";
@@ -141,18 +135,72 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E9EEC55E2B69918F00392495 /* Screens */ = {
+		E948A5382B6EDC1400C714C6 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				E994D17D2B6D844F00CFB88D /* InlineView.swift */,
 				E9EEC55F2B6993EC00392495 /* SimpleView.swift */,
 				E9EEC5632B69975F00392495 /* PopoverView.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		E948A5392B6EDC2500C714C6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
 				E9EEC5672B69999600392495 /* ColorfulTextView.swift */,
 				E9EEC56B2B699A9200392495 /* ColorfulBackgroundView.swift */,
 				E94500862B6C2AB900CD4732 /* CustomCornerRadiusView.swift */,
 				E945008C2B6C2D1500CD4732 /* CustomImageSizeView.swift */,
-				E994D17D2B6D844F00CFB88D /* InlineView.swift */,
 				E994D1812B6D874300CFB88D /* CustomStyleView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		E948A53A2B6EDC4D00C714C6 /* Rule */ = {
+			isa = PBXGroup;
+			children = (
 				E948A5362B6EDA0B00C714C6 /* BasicRuleView.swift */,
+			);
+			path = Rule;
+			sourceTree = "<group>";
+		};
+		E948A53B2B6EDC5C00C714C6 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				E9EEC5612B6993FE00392495 /* SimpleTip.swift */,
+				E9EEC5652B6997B600392495 /* PopoverTip.swift */,
+				E994D17F2B6D846200CFB88D /* InlineTip.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		E948A53C2B6EDC6100C714C6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E9EEC5692B6999E400392495 /* ColorfulTextTip.swift */,
+				E9EEC56D2B699AB300392495 /* ColorfulBackgroundTip.swift */,
+				E94500882B6C2ADC00CD4732 /* CustomCornerRadiusTip.swift */,
+				E945008A2B6C2CD700CD4732 /* CustomImageSizeTip.swift */,
+				E994D1832B6D876600CFB88D /* CustomStyleTip.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		E948A53D2B6EDC6500C714C6 /* Rule */ = {
+			isa = PBXGroup;
+			children = (
+				E948A5332B6ED95000C714C6 /* BasicRuleTip.swift */,
+			);
+			path = Rule;
+			sourceTree = "<group>";
+		};
+		E9EEC55E2B69918F00392495 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E948A5382B6EDC1400C714C6 /* Basic */,
+				E948A5392B6EDC2500C714C6 /* Custom */,
+				E948A53A2B6EDC4D00C714C6 /* Rule */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
