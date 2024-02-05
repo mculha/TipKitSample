@@ -17,41 +17,12 @@ struct MainView: View {
                 
                 CustomSection()
                 
-                Section("Rule") {
-                    NavigationLink(value: DestinationType.basicRule) {
-                        Label { Text("Basic Rule") } icon: { Image(systemName: "b.circle.fill").foregroundStyle(.gray) }
-                    }
-                    
-                    NavigationLink(value: DestinationType.multipleRules) {
-                        Label { Text("Multiple Rules") } icon: { Image(systemName: "m.circle.fill").foregroundStyle(.brown) }
-                    }
-                }
+                RuleSection()
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("TipKit")
             .navigationDestination(for: DestinationType.self) { navigation in
-                switch navigation {
-                case .simple:
-                    SimpleView()
-                case .popover:
-                    PopoverView()
-                case .colorful:
-                    ColorfulTextView()
-                case .colorfulBackground:
-                    ColorfulBackgroundView()
-                case .customCornerRadius:
-                    CustomCornerRadiusView()
-                case .customImageSize:
-                    CustomImageSizeView()
-                case .inline:
-                    InlineView()
-                case .customStyle:
-                    CustomStyleView()
-                case .basicRule:
-                    BasicRuleView()
-                case .multipleRules:
-                    MultipleRulesView()
-                }
+                return navigation.destination
             }
         }
     }
@@ -104,6 +75,19 @@ struct CustomSection: View {
     }
 }
 
+struct RuleSection: View {
+    var body: some View {
+        Section("Rule") {
+            NavigationLink(value: DestinationType.basicRule) {
+                Label { Text("Basic Rule") } icon: { Image(systemName: "b.circle.fill").foregroundStyle(.gray) }
+            }
+            
+            NavigationLink(value: DestinationType.multipleRules) {
+                Label { Text("Multiple Rules") } icon: { Image(systemName: "m.circle.fill").foregroundStyle(.brown) }
+            }
+        }
+    }
+}
 
 enum DestinationType: Hashable {
     case simple
@@ -116,4 +100,30 @@ enum DestinationType: Hashable {
     case customStyle
     case basicRule
     case multipleRules
+    
+    @ViewBuilder
+    var destination: some View {
+        switch self {
+        case .simple:
+            SimpleView()
+        case .popover:
+            PopoverView()
+        case .colorful:
+            ColorfulTextView()
+        case .colorfulBackground:
+            ColorfulBackgroundView()
+        case .customCornerRadius:
+            CustomCornerRadiusView()
+        case .customImageSize:
+            CustomImageSizeView()
+        case .inline:
+            InlineView()
+        case .customStyle:
+            CustomStyleView()
+        case .basicRule:
+            BasicRuleView()
+        case .multipleRules:
+            MultipleRulesView()
+        }
+    }
 }

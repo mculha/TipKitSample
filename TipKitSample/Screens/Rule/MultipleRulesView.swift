@@ -15,8 +15,8 @@ struct MultipleRulesView: View {
     var body: some View {
         VStack(spacing: 20) {
             
+            TipView(MultipleRuleTip(), arrowEdge: .bottom)
             Toggle("Has Order", isOn: $hasOrder)
-                .popoverTip(MultipleRuleTip(), arrowEdge: .bottom)
             
             Toggle("Needs Support", isOn: $needsSupport)
             
