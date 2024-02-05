@@ -21,6 +21,10 @@ struct MainView: View {
                     NavigationLink(value: DestinationType.basicRule) {
                         Label { Text("Basic Rule") } icon: { Image(systemName: "b.circle.fill").foregroundStyle(.gray) }
                     }
+                    
+                    NavigationLink(value: DestinationType.multipleRules) {
+                        Label { Text("Multiple Rules") } icon: { Image(systemName: "m.circle.fill").foregroundStyle(.brown) }
+                    }
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -45,6 +49,8 @@ struct MainView: View {
                     CustomStyleView()
                 case .basicRule:
                     BasicRuleView()
+                case .multipleRules:
+                    MultipleRulesView()
                 }
             }
         }
@@ -109,4 +115,5 @@ enum DestinationType: Hashable {
     case customImageSize
     case customStyle
     case basicRule
+    case multipleRules
 }
