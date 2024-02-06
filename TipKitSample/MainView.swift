@@ -15,6 +15,8 @@ struct MainView: View {
             Form {
                 BasicSection()
                 
+                ActionSection()
+                
                 CustomSection()
                 
                 RuleSection()
@@ -30,6 +32,16 @@ struct MainView: View {
 
 #Preview {
     MainView()
+}
+
+struct ActionSection: View {
+    var body: some View {
+        Section("Action") {
+            NavigationLink(value: DestinationType.actionPopover) {
+                Label { Text("Popover") } icon: { Image(systemName: "p.circle.fill").foregroundStyle(.mint) }
+            }
+        }
+    }
 }
 
 struct BasicSection: View {
@@ -100,6 +112,7 @@ enum DestinationType: Hashable {
     case customStyle
     case basicRule
     case multipleRules
+    case actionPopover
     
     @ViewBuilder
     var destination: some View {
@@ -124,6 +137,8 @@ enum DestinationType: Hashable {
             BasicRuleView()
         case .multipleRules:
             MultipleRulesView()
+        case .actionPopover:
+            PopoverActionView()
         }
     }
 }
