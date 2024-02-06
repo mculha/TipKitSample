@@ -37,6 +37,10 @@ struct MainView: View {
 struct ActionSection: View {
     var body: some View {
         Section("Action") {
+            NavigationLink(value: DestinationType.actionSimple) {
+                Label { Text("Simple") } icon: { Image(systemName: "s.circle.fill").foregroundStyle(.green) }
+            }
+            
             NavigationLink(value: DestinationType.actionPopover) {
                 Label { Text("Popover") } icon: { Image(systemName: "p.circle.fill").foregroundStyle(.mint) }
             }
@@ -113,6 +117,7 @@ enum DestinationType: Hashable {
     case basicRule
     case multipleRules
     case actionPopover
+    case actionSimple
     
     @ViewBuilder
     var destination: some View {
@@ -139,6 +144,8 @@ enum DestinationType: Hashable {
             MultipleRulesView()
         case .actionPopover:
             PopoverActionView()
+        case .actionSimple:
+            SimpleActionView()
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  PopoverActionTip.swift
+//  SimpleActionTip.swift
 //  TipKitSample
 //
 //  Created by Melih Çulha on 6.02.2024.
@@ -8,18 +8,17 @@
 import Foundation
 import TipKit
 
-struct PopoverActionTip: Tip {
-    
+struct SimpleActionTip: Tip {
     var title: Text {
-        Text("This is a Popover Action Tip Title")
+        Text("This is a Simple Action Tip Title")
     }
     
     var message: Text? {
-        Text("Popover Action Message")
+        Text("Simple Action Message")
     }
     
     var image: Image? {
-        Image(systemName: "ellipsis.message.fill")
+        Image(systemName: "ellipsis.bubble.fill")
     }
     
     var actions: [Action] {
