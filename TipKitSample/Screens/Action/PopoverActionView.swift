@@ -9,22 +9,19 @@ import SwiftUI
 import TipKit
 
 struct PopoverActionView: View {
-    
-    @Environment(\.dismiss) var dismiss
-    
     private let tip: PopoverActionTip = .init()
     
     var body: some View {
         VStack {
-            TipView(tip, arrowEdge: .bottom) { action in
-                if action.id == "ignore" {
-                    tip.invalidate(reason: .tipClosed)
-                } else if action.id == "dismiss" {
-                    self.dismiss()
-                }
-            }
-            
             Button("Popover Action Button") { }
+                .popoverTip(tip, arrowEdge: .top) { action in
+                    if action.id == "ignore" {
+                        tip.invalidate(reason: .tipClosed)
+                    } else if action.id == "faq" {
+                        UIApplication.shared.open(URL(string: "https://appleid.apple.com/faq")!)
+                        self.tip.invalidate(reason: .actionPerformed)
+                    }
+                }
         }
         .padding(.horizontal, 20)
     }

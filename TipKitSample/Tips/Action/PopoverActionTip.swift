@@ -23,7 +23,7 @@ struct PopoverActionTip: Tip {
     }
     
     var actions: [Action] {
-        Action(id: "dismiss", title: "Dismiss")
+        Action(id: "faq", title: "faq")
         
         Action(id: "ignore", title: "Ignore")
     }
