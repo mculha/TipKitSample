@@ -43,6 +43,10 @@ struct EventSection: View {
             NavigationLink(value: DestinationType.eventSimple) {
                 Label { Text("Simple") } icon: { Image(systemName: "s.circle.fill").foregroundStyle(.yellow) }
             }
+            
+            NavigationLink(value: DestinationType.eventTimeRange) {
+                Label { Text("Time Range") } icon: { Image(systemName: "t.circle.fill").foregroundStyle(.blue) }
+            }
         }
     }
 }
@@ -133,6 +137,7 @@ enum DestinationType: Hashable {
     case actionPopover
     case actionSimple
     case eventSimple
+    case eventTimeRange
     
     @ViewBuilder
     var destination: some View {
@@ -163,6 +168,8 @@ enum DestinationType: Hashable {
             SimpleActionView()
         case .eventSimple:
             SimpleEventView()
+        case .eventTimeRange:
+            TimeRangeEventView()
         }
     }
 }

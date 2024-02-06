@@ -14,6 +14,8 @@
 		E9319F942B72CB6000F8CC3B /* SimpleActionTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9319F932B72CB6000F8CC3B /* SimpleActionTip.swift */; };
 		E9319F972B72D67900F8CC3B /* SimpleEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9319F962B72D67900F8CC3B /* SimpleEventView.swift */; };
 		E9319F9A2B72D6B600F8CC3B /* SimpleEventTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9319F992B72D6B600F8CC3B /* SimpleEventTip.swift */; };
+		E9319F9C2B72D91500F8CC3B /* TimeRangeEventTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9319F9B2B72D91500F8CC3B /* TimeRangeEventTip.swift */; };
+		E9319F9E2B72D9F600F8CC3B /* TimeRangeEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9319F9D2B72D9F600F8CC3B /* TimeRangeEventView.swift */; };
 		E943486F2AAA2E86001F8E12 /* TipKitSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */; };
 		E94348712AAA2E86001F8E12 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94348702AAA2E86001F8E12 /* MainView.swift */; };
 		E94348732AAA2E86001F8E12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94348722AAA2E86001F8E12 /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		E9319F932B72CB6000F8CC3B /* SimpleActionTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleActionTip.swift; sourceTree = "<group>"; };
 		E9319F962B72D67900F8CC3B /* SimpleEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEventView.swift; sourceTree = "<group>"; };
 		E9319F992B72D6B600F8CC3B /* SimpleEventTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleEventTip.swift; sourceTree = "<group>"; };
+		E9319F9B2B72D91500F8CC3B /* TimeRangeEventTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangeEventTip.swift; sourceTree = "<group>"; };
+		E9319F9D2B72D9F600F8CC3B /* TimeRangeEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangeEventView.swift; sourceTree = "<group>"; };
 		E943486B2AAA2E86001F8E12 /* TipKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E943486E2AAA2E86001F8E12 /* TipKitSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipKitSampleApp.swift; sourceTree = "<group>"; };
 		E94348702AAA2E86001F8E12 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				E9319F962B72D67900F8CC3B /* SimpleEventView.swift */,
+				E9319F9D2B72D9F600F8CC3B /* TimeRangeEventView.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				E9319F992B72D6B600F8CC3B /* SimpleEventTip.swift */,
+				E9319F9B2B72D91500F8CC3B /* TimeRangeEventTip.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -326,11 +332,13 @@
 				E994D1802B6D846200CFB88D /* InlineTip.swift in Sources */,
 				E948A5372B6EDA0B00C714C6 /* BasicRuleView.swift in Sources */,
 				E9319F972B72D67900F8CC3B /* SimpleEventView.swift in Sources */,
+				E9319F9E2B72D9F600F8CC3B /* TimeRangeEventView.swift in Sources */,
 				E9319F942B72CB6000F8CC3B /* SimpleActionTip.swift in Sources */,
 				E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */,
 				E9EEC56E2B699AB300392495 /* ColorfulBackgroundTip.swift in Sources */,
 				E94348712AAA2E86001F8E12 /* MainView.swift in Sources */,
 				E9319F9A2B72D6B600F8CC3B /* SimpleEventTip.swift in Sources */,
+				E9319F9C2B72D91500F8CC3B /* TimeRangeEventTip.swift in Sources */,
 				E9319F8D2B72C0F400F8CC3B /* PopoverActionView.swift in Sources */,
 				E994D1842B6D876600CFB88D /* CustomStyleTip.swift in Sources */,
 				E9EEC56A2B6999E400392495 /* ColorfulTextTip.swift in Sources */,
