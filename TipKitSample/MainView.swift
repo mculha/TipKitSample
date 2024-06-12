@@ -13,6 +13,8 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             Form {
+                WWDC2024Section()
+                
                 BasicSection()
                 
                 ActionSection()
@@ -123,6 +125,23 @@ struct RuleSection: View {
     }
 }
 
+struct WWDC2024Section: View {
+    var body: some View {
+        Section("WWDC2024") {
+            NavigationLink(value: DestinationType.tipGroup) {
+                Label { Text("Tip Group") } icon: { Image(systemName: "t.circle.fill").foregroundStyle(.purple) }
+            }
+            
+            NavigationLink(value: DestinationType.resusableTip) {
+                Label { Text("Reusable Tips") } icon: { Image(systemName: "r.circle.fill").foregroundStyle(.cyan) }
+            }
+            NavigationLink(value: DestinationType.customTipStyle) {
+                Label { Text("Custom Tip Styles") } icon: { Image(systemName: "s.circle.fill").foregroundStyle(.orange) }
+            }
+        }
+    }
+}
+
 enum DestinationType: Hashable {
     case simple
     case popover
@@ -138,6 +157,9 @@ enum DestinationType: Hashable {
     case actionSimple
     case eventSimple
     case eventTimeRange
+    case tipGroup
+    case resusableTip
+    case customTipStyle
     
     @ViewBuilder
     var destination: some View {
@@ -170,6 +192,12 @@ enum DestinationType: Hashable {
             SimpleEventView()
         case .eventTimeRange:
             TimeRangeEventView()
+        case .tipGroup:
+            TipGroupView()
+        case .resusableTip:
+            EmptyView() //TODO
+        case .customTipStyle:
+            EmptyView() //TODO
         }
     }
 }
