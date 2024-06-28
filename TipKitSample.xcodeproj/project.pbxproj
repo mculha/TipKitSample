@@ -41,6 +41,8 @@
 		E9EEC56A2B6999E400392495 /* ColorfulTextTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5692B6999E400392495 /* ColorfulTextTip.swift */; };
 		E9EEC56C2B699A9200392495 /* ColorfulBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC56B2B699A9200392495 /* ColorfulBackgroundView.swift */; };
 		E9EEC56E2B699AB300392495 /* ColorfulBackgroundTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC56D2B699AB300392495 /* ColorfulBackgroundTip.swift */; };
+		E9FD6F072C2F4D5800E38B30 /* FirstTipGroupTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD6F062C2F4D4E00E38B30 /* FirstTipGroupTip.swift */; };
+		E9FD6F092C2F4D8400E38B30 /* SecondTipGroupTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD6F082C2F4D7B00E38B30 /* SecondTipGroupTip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		E9EEC5692B6999E400392495 /* ColorfulTextTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulTextTip.swift; sourceTree = "<group>"; };
 		E9EEC56B2B699A9200392495 /* ColorfulBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulBackgroundView.swift; sourceTree = "<group>"; };
 		E9EEC56D2B699AB300392495 /* ColorfulBackgroundTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulBackgroundTip.swift; sourceTree = "<group>"; };
+		E9FD6F062C2F4D4E00E38B30 /* FirstTipGroupTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTipGroupTip.swift; sourceTree = "<group>"; };
+		E9FD6F082C2F4D7B00E38B30 /* SecondTipGroupTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTipGroupTip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,8 @@
 		E9B1B15E2C1A3965009C6BBC /* WWDC2024 */ = {
 			isa = PBXGroup;
 			children = (
+				E9FD6F082C2F4D7B00E38B30 /* SecondTipGroupTip.swift */,
+				E9FD6F062C2F4D4E00E38B30 /* FirstTipGroupTip.swift */,
 			);
 			path = WWDC2024;
 			sourceTree = "<group>";
@@ -352,7 +358,9 @@
 				E9B1B1642C1A39AD009C6BBC /* TipGroupView.swift in Sources */,
 				E948A5372B6EDA0B00C714C6 /* BasicRuleView.swift in Sources */,
 				E9319F972B72D67900F8CC3B /* SimpleEventView.swift in Sources */,
+				E9FD6F072C2F4D5800E38B30 /* FirstTipGroupTip.swift in Sources */,
 				E9319F9E2B72D9F600F8CC3B /* TimeRangeEventView.swift in Sources */,
+				E9FD6F092C2F4D8400E38B30 /* SecondTipGroupTip.swift in Sources */,
 				E9319F942B72CB6000F8CC3B /* SimpleActionTip.swift in Sources */,
 				E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */,
 				E9EEC56E2B699AB300392495 /* ColorfulBackgroundTip.swift in Sources */,
