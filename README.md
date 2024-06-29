@@ -1,5 +1,14 @@
 # TipKitSample
 
+**Update:** Adding [TipGroup](https://developer.apple.com/documentation/tipkit/tipgroup) that is introduced in WWDC2024.
+>A collection of tips that can be presented one at a time using a specific order or based on the first tip eligible for display.
+
+
+The bad news is it only works in iOS 18.
+</br>
+</br>
+
+
 [**TipKit**](https://developer.apple.com/documentation/TipKit)
 >Display tips that help people discover features in your app.
 
