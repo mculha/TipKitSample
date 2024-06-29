@@ -195,7 +195,7 @@ enum DestinationType: Hashable {
         case .tipGroup:
             TipGroupView()
         case .resusableTip:
-            EmptyView() //TODO
+            ReusableTipView()
         case .customTipStyle:
             EmptyView() //TODO
         }
