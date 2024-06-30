@@ -35,6 +35,8 @@
 		E9A7CA2B2C30941F008049C5 /* ReusableTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7CA2A2C30941F008049C5 /* ReusableTipView.swift */; };
 		E9A7CA2D2C309442008049C5 /* ReusableTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7CA2C2C30943A008049C5 /* ReusableTip.swift */; };
 		E9B1B1642C1A39AD009C6BBC /* TipGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B1B1632C1A39AD009C6BBC /* TipGroupView.swift */; };
+		E9E268712C31D9C000DB255E /* CustomTipStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E268702C31D9C000DB255E /* CustomTipStyleView.swift */; };
+		E9E268752C31DA3800DB255E /* ReusableCustomTipStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E268742C31DA3100DB255E /* ReusableCustomTipStyle.swift */; };
 		E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC55F2B6993EC00392495 /* SimpleView.swift */; };
 		E9EEC5622B6993FE00392495 /* SimpleTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5612B6993FE00392495 /* SimpleTip.swift */; };
 		E9EEC5642B69975F00392495 /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEC5632B69975F00392495 /* PopoverView.swift */; };
@@ -77,6 +79,8 @@
 		E9A7CA2A2C30941F008049C5 /* ReusableTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTipView.swift; sourceTree = "<group>"; };
 		E9A7CA2C2C30943A008049C5 /* ReusableTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTip.swift; sourceTree = "<group>"; };
 		E9B1B1632C1A39AD009C6BBC /* TipGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipGroupView.swift; sourceTree = "<group>"; };
+		E9E268702C31D9C000DB255E /* CustomTipStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipStyleView.swift; sourceTree = "<group>"; };
+		E9E268742C31DA3100DB255E /* ReusableCustomTipStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCustomTipStyle.swift; sourceTree = "<group>"; };
 		E9EEC55F2B6993EC00392495 /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 		E9EEC5612B6993FE00392495 /* SimpleTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTip.swift; sourceTree = "<group>"; };
 		E9EEC5632B69975F00392495 /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 		E9B1B15E2C1A3965009C6BBC /* WWDC2024 */ = {
 			isa = PBXGroup;
 			children = (
+				E9E268742C31DA3100DB255E /* ReusableCustomTipStyle.swift */,
 				E9A7CA2C2C30943A008049C5 /* ReusableTip.swift */,
 				E9FD6F082C2F4D7B00E38B30 /* SecondTipGroupTip.swift */,
 				E9FD6F062C2F4D4E00E38B30 /* FirstTipGroupTip.swift */,
@@ -272,6 +277,7 @@
 			children = (
 				E9B1B1632C1A39AD009C6BBC /* TipGroupView.swift */,
 				E9A7CA2A2C30941F008049C5 /* ReusableTipView.swift */,
+				E9E268702C31D9C000DB255E /* CustomTipStyleView.swift */,
 			);
 			path = WWDC2024;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 				E90848552B61A95300681C92 /* CustomTipStyle.swift in Sources */,
 				E9EEC56E2B699AB300392495 /* ColorfulBackgroundTip.swift in Sources */,
 				E94348712AAA2E86001F8E12 /* MainView.swift in Sources */,
+				E9E268712C31D9C000DB255E /* CustomTipStyleView.swift in Sources */,
 				E9319F9A2B72D6B600F8CC3B /* SimpleEventTip.swift in Sources */,
 				E9319F9C2B72D91500F8CC3B /* TimeRangeEventTip.swift in Sources */,
 				E9319F8D2B72C0F400F8CC3B /* PopoverActionView.swift in Sources */,
@@ -386,6 +393,7 @@
 				E945008B2B6C2CD700CD4732 /* CustomImageSizeTip.swift in Sources */,
 				E948A5342B6ED95000C714C6 /* BasicRuleTip.swift in Sources */,
 				E9EEC5642B69975F00392495 /* PopoverView.swift in Sources */,
+				E9E268752C31DA3800DB255E /* ReusableCustomTipStyle.swift in Sources */,
 				E94500872B6C2AB900CD4732 /* CustomCornerRadiusView.swift in Sources */,
 				E9EEC5602B6993EC00392495 /* SimpleView.swift in Sources */,
 				E9EEC5662B6997B600392495 /* PopoverTip.swift in Sources */,
