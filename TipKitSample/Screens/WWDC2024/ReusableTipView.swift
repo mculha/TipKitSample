@@ -11,7 +11,7 @@ import TipKit
 struct ReusableTipView: View {
     
     let reusableModels: [ReusableTipModel] = [
-        .init(title: "This is a Reusable Tip Title", message: "Reusable Tip Message", image: "arrow.3.trianglepath", bgImage: "image", id: UUID().uuidString)
+        .init(title: "This is a Reusable Tip Title", message: "Reusable Tip Message", image: "arrow.3.trianglepath", id: UUID().uuidString)
     ]
     var currentTip: ReusableTipModel {
         return reusableModels.first!

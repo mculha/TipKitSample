@@ -135,9 +135,6 @@ struct WWDC2024Section: View {
             NavigationLink(value: DestinationType.resusableTip) {
                 Label { Text("Reusable Tips") } icon: { Image(systemName: "r.circle.fill").foregroundStyle(.cyan) }
             }
-            NavigationLink(value: DestinationType.customTipStyle) {
-                Label { Text("Custom Tip Styles") } icon: { Image(systemName: "s.circle.fill").foregroundStyle(.orange) }
-            }
         }
     }
 }
@@ -159,7 +156,6 @@ enum DestinationType: Hashable {
     case eventTimeRange
     case tipGroup
     case resusableTip
-    case customTipStyle
     
     @ViewBuilder
     var destination: some View {
@@ -196,8 +192,6 @@ enum DestinationType: Hashable {
             TipGroupView()
         case .resusableTip:
             ReusableTipView()
-        case .customTipStyle:
-            CustomTipStyleView()
         }
     }
 }

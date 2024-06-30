@@ -34,6 +34,5 @@ struct ReusableTipModel {
     let title: String
     let message: String
     let image: String
-    let bgImage: String
     let id: String
 }
